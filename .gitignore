@@ -1,0 +1,13 @@
+# Dependencies
+/server/node_modules
+/web/node_modules
+
+# Build output
+/web/dist
+
+# Environment variables
+/server/.env
+
+# IDE and OS files
+.vscode
+.DS_Store
