@@ -1,0 +1,21 @@
+// src/components/BlogList.js
+import React from "react";
+
+function BlogList({ blogs }) {
+  return (
+    <div>
+      <h2>All Blogs</h2>
+      {blogs.map((b) => (
+        <div key={b.id} style={{ border: "1px solid gray", margin: "10px", padding: "10px" }}>
+          <h3>{b.title}</h3>
+          <p>{b.content}</p>
+          <small>
+            By: {b.user_id} | {new Date(b.created_at).toLocaleString()}
+          </small>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+export default BlogList;
