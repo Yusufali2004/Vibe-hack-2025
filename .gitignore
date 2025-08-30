@@ -11,6 +11,3 @@
 # IDE and OS files
 .vscode
 .DS_Store
-
-# Ignore the entire server folder from now on
-/server
